@@ -1,18 +1,17 @@
-public class NumberPattern {
+public class PatternProgram {
     public static void main(String[] args) {
-        int rows = 5;
+        int rows = 6; // Number of rows in the assignment
 
         for (int i = 1; i <= rows; i++) {
-          
             for (int j = 1; j <= i; j++) {
-                System.out.print(j);
+              
+                if ((i + j) % 2 == 0) {
+                    System.out.print(1);
+                } else {
+                    System.out.print(0);
+                }
             }
-
-           
-            for (int j = i - 1; j >= 1; j--) {
-                System.out.print(j);
-            }
-
+          
             System.out.println();
         }
     }
